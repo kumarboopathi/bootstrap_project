@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    padding: 10px 40px;
+    box-shadow: 5px 5px 30px rgb(0, 0, 0, .3);
+    background: rgb(45, 38, 38);
+}
+
+#navbar .navbar-brand {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(100, 236, 100);
+}
+
+.navbar-nav .nav-link {
+    color: aliceblue;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid rgb(100, 236, 100);
+}
+
+#navbarSupportedContent button {
+    background: rgb(100, 236, 100);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(./image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home h1 {
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px rgb(231, 218, 218), 0px 2px 0px rgb(231, 218, 218), 0px 3px 0px rgb(231, 218, 218), 0px 4px 0px rgb(231, 218, 218), 0px 5px 0px rgb(231, 218, 218), 0px 6px 0px rgb(231, 218, 218);
+}
+
+#home p {
+    color: #fff;
+}
+
+#home .input-group {
+    width: 40%;
+    height: 45px;
+}
+
+#home .input-group button {
+    background: rgb(100, 236, 100);
+    color: #fff;
+}
+
+#about {
+    background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    /* background: linear-gradient(315deg, #f2cf43 0%, #19a186 74%); */
+}
+
+#about h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: #008E4D;
+}
+
+#about p {
+    font-size: 20px;
+    color: #f4dddd;
+}
+
+#about img {
+    width: 100%;
+}
+
+.row {
+    align-items: center;
+}
+
+#products {
+    background: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+#products h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#products img {
+    width: 100%;
+}
+
+#products a {
+    background: rgb(56, 228, 56);
+    border: none;
+}
+
+.card {
+    border: none;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3), inset 4px 4px 10px wheat;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, .3), inset -4px -4px 10px wheat;
+    transition: 2s;
+    transition-timing-function: ease-out;
+}
+
+#contact {
+    background: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+}
+
+#contact img {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 8px 0;
+}
+
+form textarea {
+    margin: 8px 0;
+}
+
+@media only screen and (max-width:768px) {
+    #home .input-group {
+        width: 80%;
+    }
+}
